@@ -21,15 +21,14 @@ print('\033[1;31mJOGOS DA MEGA SENA CRIADOS\033[m')
 
 for c in range(0, quantidadejogos):
     contador = 0
-    jogos.append([randint(1, 60), randint(1,60), randint(1,60), randint(1,60), randint(1,60), randint(1,60)])
-    sleep(1)
-    for i in range(0,6):
-        if jogos[c][i] in jogos[c]:
+    jogos.append([])
+    while contador < 6:
+        num = randint(1,60)
+        if num not in jogos[c]:
+            jogos[c].append(num)
             contador += 1
-        if contador > 1:
-            contador = 0
-            jogos[c][i] = randint(1, 60)
     jogos[c].sort()
     print(f'Os números criados para o {c+1}° jogo: \033[1;32m{jogos[c]}\033[m')
+    sleep(1)
 
 print('\n\033[1;34mBOA SORTE!!!\033[m')
