@@ -113,7 +113,7 @@ while True:
         for c in range(0, len(lista_alunos_notas)):
             if resposta in [lista_alunos_notas[c][0]]:
                 sleep(1.5)
-                print(f'A nota 1 e nota 2, respectivamente, do {lista_alunos_notas[c][0].capitalize()} foi: '
+                print(f'A nota 1 e nota 2, respectivamente, do(a) {lista_alunos_notas[c][0].capitalize()} foi: '
                   f'\033[1;32m{lista_alunos_notas[c][1]}\033[m e \033[1;32m{lista_alunos_notas[c][2]}\033[m')
                 sleep(1.5)
                 aux += 1
