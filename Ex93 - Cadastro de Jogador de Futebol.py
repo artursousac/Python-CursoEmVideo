@@ -54,4 +54,3 @@ for i in range (0, quantidadesPartidas):
     print(f'O jogador fez {jogador["Gols"][i]} gols na {i+1}° partida')
 print(f'Total de Gols = {jogador["Total de Gols"]}')
 
-
